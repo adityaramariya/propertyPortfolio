@@ -1,0 +1,7 @@
+{
+  "name": "searchProperty",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./searchProperty.js"
+}
+

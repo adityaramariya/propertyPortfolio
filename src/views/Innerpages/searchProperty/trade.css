@@ -1,0 +1,95 @@
+.app-body .main
+{
+    padding: 0;
+}
+.trading-right--wrapper{
+    padding-left: 52px;
+    overflow-x: auto;
+    max-width: 100vw;
+}
+
+.trading-right--wrapper .card
+{
+    margin: 0;
+}
+
+.trading-right--wrapper .card-header{
+    font-size:0.9em;
+}
+
+.customPopup.showModal
+{
+	display: flex;
+}
+.customPopup
+{
+	position: absolute;
+    max-width: 700px;
+    max-height: 65vh;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+	overflow-y: auto;
+    background: white;
+	box-shadow: 0 0 10px #000;
+	
+}
+
+.customPopup .tradingTableWrapper
+{
+	margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+.container-fluid{
+	position: inherit;
+}
+.customPopupBody{
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+}
+
+.customPopupBody  > .row{
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom:10px;
+    border-bottom: 1px solid #ddd;
+}
+.customPopupBody > .row:nth-last-child(1)
+{
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.customPopupBody .button-group
+{
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: flex-end;
+    padding:0 15px;
+}
+
+.border-right-1
+{
+    border-right: 1px solid #d1d4d7;
+}
+.pt-80
+{
+    padding-top: 80px;
+}
+
+.customPopupBody .tradingActionTable
+{
+    background-color: #111;
+    color:#fff;
+}
+
