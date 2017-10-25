@@ -1,0 +1,7 @@
+{
+  "name": "Trading Limit page",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./TradingLimit.js"
+}
+

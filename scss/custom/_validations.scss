@@ -1,0 +1,17 @@
+/* Custom Validation */
+.error, .warning
+{
+  position: absolute;
+  padding:5px 10px;
+  color:#fff;
+  z-index:20;
+  width: 100%;
+}
+.error
+{
+  background-color: $brand-danger;
+}
+.warning
+{
+  background-color: $brand-warning;
+}

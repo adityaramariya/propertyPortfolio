@@ -1,0 +1,94 @@
+// Bootstrap overrides
+//$theme-color:#273042;
+$theme-color: #17294d;
+$transColor : rgba($theme-color, 0.7);
+$activeColor :lighten($theme-color, 5%);
+$theme-light-color:lighten($theme-color, 10%);
+$theme-dark-color:darken($theme-color, 5%);
+$theme-border-color: $theme-light-color;
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:             #2a2c36;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #d1d4d7;
+$gray-lightest:             #f8f9fa;
+$brand-primary:             #3099f5;
+$brand-success:             #4dbd74;
+$brand-info:                #63c2de;
+$brand-warning:             #f8cb00;
+$brand-danger:              #f86c6b;
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-transitions:        true;
+$enable-rounded:            false;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer:   1rem !default;
+$spacer-x: $spacer !default;
+$spacer-y: $spacer !default;
+$spacers: (
+  q: (
+    x:   ($spacer-x * 0.25),
+    y:   ($spacer-y * 0.25)
+  ),
+  h: (
+    x:   ($spacer-x * 0.5),
+    y:   ($spacer-y * 0.5)
+  ),
+  0: (
+    x:   0,
+    y:   0
+  ),
+  1: (
+    x:   $spacer-x,
+    y:   $spacer-y
+  ),
+  2: (
+    x:   ($spacer-x * 1.5),
+    y:   ($spacer-y * 1.5)
+  ),
+  3: (
+    x:   ($spacer-x * 3),
+    y:   ($spacer-y * 3)
+  )
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                    #e4e5e6;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:             0.875rem;
+
+// Breadcrumbs
+
+$breadcrumb-bg:                 #fff;
+
+// Cards
+
+$card-border-color:        $theme-color;
+$card-cap-bg:              $gray-lightest;
+
+// Dropdowns
+
+$dropdown-padding-y:             0;
+$dropdown-border-color:          $theme-color;
+$dropdown-divider-bg:            $theme-light-color;
+$screen-sm-min:  768px;
+$screen-md-min: 992px;
+$screen-lg-min:1200px;
+$border-radius-base : 4px;

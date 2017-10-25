@@ -1,0 +1,143 @@
+.flex
+{
+  display: flex;
+}
+
+.table-outline {
+  border: 1px solid $table-border-color;
+
+  td {
+    vertical-align: middle;
+  }
+}
+
+.table-align-middle {
+
+  td {
+    vertical-align: middle;
+  }
+}
+
+.table-clear {
+  td {
+    border: 0;
+  }
+}
+
+
+
+/*fixed header table*/
+
+.tradingTableWrapper
+{
+  margin-top: 10px;
+  border:2px solid $gray-light;
+}
+
+.points_table, table
+{
+  margin:0;
+  font-size:0.6rem;
+  color:$white;
+  thead, tbody
+  {
+    width: 100%;
+  }
+
+  thead
+  {
+    background: darken($theme-color, 2%);
+    th
+    {
+      border-bottom: 0 !important;
+    }
+  }
+
+  tbody
+  {
+    tr
+    {
+      td
+      {
+        &:nth-child(1)
+        {
+          background: darken($theme-color, 2%);
+          width: 100px
+        }
+      }
+    }
+  }
+}
+.points_table tbody td, .points_table thead > tr> th{
+  border-bottom-width: 0;
+}
+.leftColumnFixedTable
+{
+  .fixedTableColumn{
+    background-color: $gray-lighter;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: auto;
+    white-space: normal;
+    height: 30px;
+    margin-left: 0px;
+    box-shadow: 2px 0 3px rgba(0,0,0,0.25);
+    + td
+    {
+      padding-left: 108px;
+    }
+
+    + th
+    {
+      padding-left: 108px;
+    }
+  }
+  td, th
+  {
+    height:30px;
+  }
+}
+
+.condensed-table
+{
+  margin-bottom: 0;
+  td, th
+  {
+    padding:5px 8px;
+    font-size:0.7em;
+    border-color: $gray-light
+  }
+}
+
+
+
+.editableTable{
+  td
+  {
+    position: relative;
+    height: 20px;
+    .form-control
+    {
+      font-size:inherit;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height:100% !important;
+      border:0;
+    }
+  }
+}
+
+
+.smallTD{
+  padding: 0;
+  width: 40px;
+}
+
+.mdTD
+{
+  width:150px;
+}
+
+

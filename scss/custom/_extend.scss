@@ -1,0 +1,12 @@
+.di{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hvc
+{
+  @extend .di;
+  align-items:center;
+  justify-content:center;
+}
+

@@ -1,0 +1,40 @@
+.nav-tabs {
+  background-color: $transColor;
+  border: 0;
+  .nav-link {
+    color: $white !important;
+    padding: 1.5rem 2rem;
+    &.active {
+      color: $brand-primary !important;
+      background:$activeColor;
+      border-color: $activeColor;
+      border-bottom-color: $activeColor;
+      &:focus {
+        background:$activeColor;
+        border-color: $brand-primary;
+        border-bottom-color: $brand-primary;
+      }
+    }
+    &:hover
+    {
+      cursor: pointer;
+      border-color: transparent;
+      color: $brand-primary !important;
+     // color: $brand-primary;
+    }
+  }
+}
+.tab-content {
+  margin-top: -1px;
+  border: 0;
+  .tab-pane {
+    padding: $spacer-y $spacer-x;
+  }
+}
+.card-block {
+  .tab-content {
+    margin-top: 0;
+    border: 0;
+  }
+}
+
