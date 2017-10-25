@@ -1,7 +1,7 @@
 .sidebar, .aside-menu {
   padding: $sidebar-padding;
   color: $sidebar-color;
-  background: $theme-dark-color;
+  background: $theme-color;
   z-index:10;
   @include borders($sidebar-borders);
   .sidebar-close {
@@ -22,7 +22,7 @@
     }
   }
   .sidebar-nav  {
-    background:  $theme-dark-color;
+    background:  $theme-color;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -33,7 +33,7 @@
       position: absolute;
       height:100%;
       width: 60px;
-      background-color: $transColor;
+      background-color: #11203d;
     }
     &::-webkit-scrollbar {
 
@@ -110,16 +110,16 @@
           border-radius: $border-radius;
         }
         &:hover {
-          color: $sidebar-nav-link-hover-color !important;
-          background: $activeColor !important;
+         color: $sidebar-nav-link-hover-color !important;
+          background: $sidebar-nav-link-hover-bg !important;
           @include borders($sidebar-nav-link-hover-borders);
           i {
             color: $sidebar-nav-link-hover-icon-color;
           }
         }
         &.active {
-          color: $sidebar-nav-link-hover-color;
-          background: $activeColor !important;
+          color: $sidebar-nav-link-hover-color !important;
+          background: $sidebar-nav-link-hover-bg !important;
           @include borders($sidebar-nav-link-active-borders);
 
           i {
@@ -136,6 +136,13 @@
           justify-content:center;
           color: currentcolor;
           font-size:2em;
+        }
+         i {
+          width: 20px;
+          margin: 0 ($sidebar-nav-link-padding-x / 2) 0 0;
+          font-size: 14px;
+          color: $sidebar-nav-link-icon-color;
+          text-align: center;
         }
      
 

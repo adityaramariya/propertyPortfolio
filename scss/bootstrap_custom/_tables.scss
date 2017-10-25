@@ -1,7 +1,3 @@
-.flex
-{
-  display: flex;
-}
 
 .table-outline {
   border: 1px solid $table-border-color;
@@ -24,21 +20,11 @@
   }
 }
 
-
-
 /*fixed header table*/
 
-.tradingTableWrapper
+table
 {
-  margin-top: 10px;
-  border:2px solid $gray-light;
-}
-
-.points_table, table
-{
-  margin:0;
-  font-size:0.6rem;
-  color:$white;
+  font-size: 0.9em;
   thead, tbody
   {
     width: 100%;
@@ -46,58 +32,24 @@
 
   thead
   {
-    background: darken($theme-color, 2%);
     th
     {
       border-bottom: 0 !important;
     }
   }
 
-  tbody
+  &.calculationTable
   {
-    tr
+    tbody tr 
     {
-      td
+      &:nth-last-child(1)
       {
-        &:nth-child(1)
-        {
-          background: darken($theme-color, 2%);
-          width: 100px
-        }
+        color:$brand-primary;
       }
     }
   }
 }
-.points_table tbody td, .points_table thead > tr> th{
-  border-bottom-width: 0;
-}
-.leftColumnFixedTable
-{
-  .fixedTableColumn{
-    background-color: $gray-lighter;
-    width: 100px;
-    position: absolute;
-    left: 0;
-    top: auto;
-    white-space: normal;
-    height: 30px;
-    margin-left: 0px;
-    box-shadow: 2px 0 3px rgba(0,0,0,0.25);
-    + td
-    {
-      padding-left: 108px;
-    }
 
-    + th
-    {
-      padding-left: 108px;
-    }
-  }
-  td, th
-  {
-    height:30px;
-  }
-}
 
 .condensed-table
 {
@@ -110,7 +62,7 @@
   }
 }
 
-
+/*
 
 .editableTable{
   td
@@ -128,16 +80,6 @@
     }
   }
 }
-
-
-.smallTD{
-  padding: 0;
-  width: 40px;
-}
-
-.mdTD
-{
-  width:150px;
-}
+*/
 
 

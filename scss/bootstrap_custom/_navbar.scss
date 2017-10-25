@@ -118,7 +118,8 @@ header.navbar {
       {
         background-color: $theme-dark-color;
         padding: 0 15px;
-        color: $white;;
+        color: $white;
+        font-weight: bold;
       }
     }
     .nav-link {
@@ -139,8 +140,8 @@ header.navbar {
       }
 
       > .img-avatar {
-        height: $navbar-height - 20px;
-        margin: 0 10px;
+        height: $navbar-height - 30px;
+        margin-left: 15px;
         border-radius: 100%;
       }
     }

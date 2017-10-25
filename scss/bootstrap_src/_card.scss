@@ -7,13 +7,13 @@
   display: flex;
   flex-direction: column;
   /*background-color: $activeColor;*/
-  background-color: $theme-color;
+  background-color: $white;
   border: 0;
   //border: $card-border-width solid $card-border-color;
-  color:$white;
-  @include border-radius($card-border-radius);
+  color:$black;
+  border-radius: 1rem;
+  //@include border-radius($card-border-radius);
 }
-
 .card-block {
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.

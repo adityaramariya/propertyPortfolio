@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import { Bar, Line } from 'react-chartjs-2';
 import axios from 'axios';
 import { Dropdown, DropdownMenu, DropdownItem, Progress } from 'reactstrap';
-
 const brandPrimary =  '#20a8d8';
 const brandSuccess =  '#4dbd74';
 const brandInfo =     '#63c2de';
 const brandDanger =   '#f86c6b';
-
-
-
 
 // Card Chart 1
 const cardChartData1 = {
@@ -23,7 +19,6 @@ const cardChartData1 = {
     }
   ],
 };
-
 const cardChartOpts1 = {
   maintainAspectRatio: false,
   legend: {
@@ -61,7 +56,6 @@ const cardChartOpts1 = {
     },
   }
 }
-
 // Card Chart 2
 const cardChartData2 = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -74,7 +68,6 @@ const cardChartData2 = {
     }
   ],
 };
-
 const cardChartOpts2 = {
   maintainAspectRatio: false,
   legend: {
@@ -113,7 +106,6 @@ const cardChartOpts2 = {
     },
   }
 }
-
 // Card Chart 3
 const cardChartData3 = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -126,7 +118,6 @@ const cardChartData3 = {
     }
   ],
 };
-
 const cardChartOpts3 = {
   maintainAspectRatio: false,
   legend: {
@@ -151,7 +142,6 @@ const cardChartOpts3 = {
     },
   }
 }
-
 // Card Chart 4
 const cardChartData4 = {
   labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
@@ -164,7 +154,6 @@ const cardChartData4 = {
     }
   ],
 };
-
 const cardChartOpts4 = {
   maintainAspectRatio: false,
   legend: {
@@ -180,9 +169,7 @@ const cardChartOpts4 = {
     }]
   }
 }
-
 // Main Chart
-
 // convert Hex to RGBA
 function convertHex(hex,opacity) {
   hex = hex.replace('#','');
@@ -198,18 +185,15 @@ function convertHex(hex,opacity) {
 function random(min,max) {
   return Math.floor(Math.random()*(max-min+1)+min);
 }
-
 var elements = 27;
 var data1 = [];
 var data2 = [];
 var data3 = [];
-
 for (var i = 0; i <= elements; i++) {
   data1.push(random(50,200));
   data2.push(random(80,100));
   data3.push(65);
 }
-
 const mainChart = {
   labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
   datasets: [

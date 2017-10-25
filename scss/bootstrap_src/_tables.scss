@@ -5,22 +5,21 @@
 .table {
   width: 100%;
   max-width: 100%;
-  //margin-bottom: $spacer;
 
   th,
   td {
     padding: $table-cell-padding;
     vertical-align: top;
-    border-top: $table-border-width solid $theme-border-color;
+    border-top: $table-border-width solid $gray-lighter;
   }
 
   thead th {
     vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $theme-border-color;
+    border-bottom: (2 * $table-border-width) solid $gray-lighter;
   }
 
   tbody + tbody {
-    border-top: (2 * $table-border-width) solid $theme-border-color;
+    border-top: (2 * $table-border-width) solid $gray-lighter;
   }
 
   .table {
@@ -46,11 +45,11 @@
 // Add borders all around the table and between all the columns.
 
 .table-bordered {
-  border: $table-border-width solid $theme-border-color;
+  border: $table-border-width solid $gray-lighter;
 
   th,
   td {
-    border: $table-border-width solid $theme-border-color;
+    border: $table-border-width solid $gray-lighter;
   }
 
   thead {
@@ -125,7 +124,7 @@
   th,
   td,
   thead th {
-    border-color: $theme-border-color;
+    border-color: $gray-lighter;
   }
 
   &.table-bordered {

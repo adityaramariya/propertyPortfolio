@@ -87,14 +87,14 @@ $sidebar-nav-link-bg:               transparent;
 $sidebar-nav-link-icon-color:       $text-muted;
 
 $sidebar-nav-link-borders:          0;
-$sidebar-nav-link-hover-color:      $blue;
+$sidebar-nav-link-hover-color:      $white;
 $sidebar-nav-link-hover-bg:         $sidebar-header-bg;
-$sidebar-nav-link-hover-icon-color: $blue !important;
+$sidebar-nav-link-hover-icon-color: $white !important;
 
 $sidebar-nav-link-hover-borders:    0;
 $sidebar-nav-link-active-color:     #fff;
-$sidebar-nav-link-active-bg:        lighten($sidebar-bg, 5%);
-$sidebar-nav-link-active-icon-color: $brand-primary;
+$sidebar-nav-link-active-bg:        rgba($black, 0.1)
+$sidebar-nav-link-active-icon-color: $white;
 
 $sidebar-nav-link-active-borders:   0;
 

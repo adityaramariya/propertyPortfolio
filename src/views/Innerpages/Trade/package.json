@@ -1,7 +1,0 @@
-{
-  "name": "Trade",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./Trade.js"
-}
-

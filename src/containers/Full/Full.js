@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header/';
 import Sidebar from '../../components/Sidebar/';
-import Aside from '../../components/Aside/';
+// import Aside from '../../components/Aside/';
 import ReduxToastr from 'react-redux-toastr';
 class Full extends Component {
   render() {
@@ -13,7 +13,7 @@ class Full extends Component {
             <main className="main">
                 {this.props.children}
           </main>
-            <Aside />
+            {/*<Aside />*/}
         </div>
         {/* <Footer /> */}
  <ReduxToastr

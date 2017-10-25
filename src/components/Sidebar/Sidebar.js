@@ -18,46 +18,14 @@ class Sidebar extends Component {
         <nav className="sidebar-nav">
           {/*static list in sidebar*/}
          <ul className="nav">
-           <li className={this.activeRoute("/components")}>
-             <a className="nav-link nav-dropdown-toggle" href="#" onClick={this.handleClick.bind(this)}><i className="icon-puzzle"></i> Components</a>
-             <ul className="nav-dropdown-items">
-               <li className="nav-item">
-                 <Link to={'/components/buttons'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Buttons</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to={'/components/social-buttons'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Social Buttons</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to={'/components/cards'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Cards</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to={'/components/modals'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Modals</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to={'/components/switches'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Switches</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to={'/components/tables'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Tables</Link>
-               </li>
-               <li className="nav-item">
-                 <Link to={'/components/tabs'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i> Tabs</Link>
-               </li>
-             </ul>
-           </li>
-            <li className="nav-item">
-              <Link to={'/dashboard'} className="nav-link" activeClassName="active"><i className="icon-speedometer"></i> Dashboard</Link>
-            </li>
-            <li className={this.activeRoute("/components")}>
-              <Link to={'/dashboard'} className="nav-link" activeClassName="active"><i className="icon-puzzle"></i>  Dashboard</Link>
-            </li>
             <li className={this.activeRoute("/forms")}>
               <Link to={'/dashboard'} className="nav-link" activeClassName="active"><i className="icon-note"></i> Dashboard</Link>
             </li>
             <li className={this.activeRoute("/icons")}>
-              <Link to={'/dashboard'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Icons</Link>
+              <Link to={'/dashboard'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Properties</Link>
             </li>
           </ul>
-          <ul className="nav navbar-nav hidden-md-down">
+          {/*<ul className="nav navbar-nav hidden-md-down">
             {headerData && headerData.map(function (headerNavLink) {
                 var imgPath = "img/icons/"+headerNavLink.linkName+".svg"
               return (
@@ -66,7 +34,7 @@ class Sidebar extends Component {
                   </li>
               )
             })}
-          </ul>
+          </ul>*/}
         </nav>
       </div>
     )

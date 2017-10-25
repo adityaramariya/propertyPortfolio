@@ -18,7 +18,6 @@ const mapDispatchToProps = function (dispatch) {
         dispatchHeaderLinkData: setHeaderLinkData,
     }, dispatch)
 }
-
 var apiBaseUrl = "http://103.76.253.131:8791/userauth/oauth/token";;
 var config = {
     headers: {
@@ -33,39 +32,11 @@ class Login extends FormWithConstraints {
             submitButtonDisabled: false,
             headerNav: [{
                 linkName: 'Dashboard',
-                linkTo: '#/Innerpages/Dashboards'
+                linkTo: '#/Innerpages/Dashboard'
             },
                 {
-                    linkName: 'Trade',
+                    linkName: 'Properties',
                     linkTo: '#/Innerpages/trade'
-                },
-                {
-                    linkName: 'Trading limit',
-                    linkTo: '#/Innerpages/TradingLimit'
-                },
-                {
-                    linkName: 'Reports',
-                    linkTo: '#/Innerpages/Reports'
-                },
-                {
-                    linkName: 'User',
-                    linkTo: '#/Innerpages/User'
-                },
-                {
-                    linkName: 'License',
-                    linkTo: '#/Innerpages/Licence'
-                },
-                {
-                    linkName: 'Brokerage',
-                    linkTo: '#/Innerpages/brokerage'
-                },
-                {
-                    linkName: 'Company',
-                    linkTo: '#/Innerpages/Company'
-                },
-                {
-                    linkName: 'Add Product',
-                    linkTo: '#/Innerpages/ProductConf'
                 }
             ]
         };
@@ -110,7 +81,7 @@ class Login extends FormWithConstraints {
                         cookie.save('AUTHORIZATION', response.data.access_token, {
                             path: '/'
                         });
-                        self.context.router.push('/innerPages/dashboards');
+                        self.context.router.push('/innerPages/dashboard');
                         event.preventDefault();
                     } else if (response.status === 204) {
                         console.log("Username password do not match");
@@ -180,7 +151,7 @@ class Login extends FormWithConstraints {
                                 type="button" onClick={this.onSubmit.bind(this)}
                                 className="btn btn-primary  btn-block">Sign In
                             </button>
-                            <div className="flex justify-content-between">
+                            <div className="di justify-content-between">
                                 <a href="#/pages/ForgotPassword">Forgot
                                     password?</a>
                                 <a href="#/pages/register">Sign Up</a>

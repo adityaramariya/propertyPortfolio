@@ -31,7 +31,7 @@ import Spinners from './views/Plugins/Spinners/'
 import Admin from './views/Innerpages/Admin/'
 import Licence from './views/Innerpages/Licence/'
 import Brokerage from './views/Innerpages/Brokerage/'
-import Trade from './views/Innerpages/Trade/'
+import searchProperty from './views/Innerpages/searchProperty/'
 import TradingLimit from './views/Innerpages/TradingLimit/'
 import Reports from './views/Innerpages/Reports/'
 import Dashboard from './views/Innerpages/Dashboard/'
@@ -70,7 +70,7 @@ export default (
       <Route path="admin" name="Admin Page" component={Admin}/>
       <Route path="Licence" name="Licence Page" component={Licence}/>
       <Route path="Brokerage" name="Brokerage Page" component={Brokerage}/>
-      <Route path="trade" name="Trade Page" component={Trade}/>
+      <Route path="searchProperty" name="searchProperty Page" component={searchProperty}/>
       <Route path="TradingLimit" name="Trading limit page" component={TradingLimit}/>
       <Route path="reports" name="Reports Page" component={Reports}/>
       <Route path="dashboard" name="DashboardPage Page" component={Dashboard}/>

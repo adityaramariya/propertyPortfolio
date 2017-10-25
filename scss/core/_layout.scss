@@ -32,14 +32,13 @@
   flex-grow:1;
   flex-direction: row;
   overflow-x: hidden;
-
   .main {
     flex: 1;
     //padding:1rem !important;
-    background:  $gray-light;
+    background:  $gray-lighter;
     display: flex;
     flex-direction:column;
-    
+    padding: $spacer;
     .mainInnerWrapper
     {
       flex:1;

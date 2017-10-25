@@ -48,8 +48,8 @@ class Header extends Component {
                     </li>
                     <li className="nav-item adminHeaderlink">
                         <a onClick={this.toggle} className="nav-link" href="#" role="button">
-                            <span className="hidden-md-down">admin</span>
-                            <img src={'img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                            <span className="hidden-md-down">Kerem</span>
+                            <img src={'img/avatars/8.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                         </a>
                     </li>
                 </ul>

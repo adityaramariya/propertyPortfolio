@@ -6,6 +6,11 @@
   height: 8px;
 }
 
+.progress-md
+{
+	height: 12px;
+}
+
 // White progress bar
 .progress-white {
   background-color: rgba(255,255,255,.2) !important;
@@ -13,3 +18,25 @@
     background-color: #fff;
   }
 }
+
+ .progressFlex
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    li
+    {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 15px;
+      padding: 0;
+      .progress
+      {
+        flex: 1 0 100%;
+      }
+    }
+  }
+
